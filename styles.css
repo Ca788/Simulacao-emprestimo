@@ -1,0 +1,162 @@
+/* Estilos gerais */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #ffffff, #f5f5f5);
+    color: #000000;
+}
+
+h1,
+h3 {
+    color: #ff6600;
+}
+
+
+/* Estilos do header */
+
+header {
+    background: linear-gradient(to bottom, #ff9933, #ff6600);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #ffffff;
+}
+
+
+/* Estilos do main */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #ff6600;
+}
+
+input,
+select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff6600;
+}
+
+.btn-simular {
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #ff9933, #ff6600);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-simular:hover {
+    background: linear-gradient(to bottom, #ff8533, #ff6600);
+}
+
+.whatsapp-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4AC959;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    background-color: #3c974e;
+}
+
+
+/* Estilos do resultado */
+
+.resultado {
+    background: linear-gradient(to bottom, #ff9933, #ff6600);
+    padding: 40px;
+    text-align: center;
+}
+
+.container-resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-resultado label {
+    color: #ffffff;
+}
+
+.container-resultado input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+    color: #ff6600;
+}
+
+.hero-mobile2 {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.parcelaSolicitada {
+    appearance: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff6600;
+    background-color: #ffffff;
+    color: #ff6600;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.parcelaSolicitada option {
+    background-color: #ffffff;
+    color: #ff6600;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.parcelaSolicitada option:hover {
+    background-color: #ff6600;
+    color: #ffffff;
+}
+
+.parcelaSolicitada option:checked {
+    background-color: #ff6600;
+    color: #ffffff;
+}

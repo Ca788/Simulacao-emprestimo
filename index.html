@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bbcred-simulação</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.6/dist/inputmask/inputmask.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="img/logo-282x62.png">
+        </h1>
+    </header>
+    <main>
+        <section class="left">
+            <h1>
+                <img src="img">
+            </h1>
+            <h3>
+                Empréstimo a partir de R$100
+            </h3>
+        </section>
+        <section class="right">
+            <form action="">
+                <label for="valor">Valor:</label>
+                <input class="valorSolicitado" type="text" name="" id="valorSolicitado" value="0">
+                <select class="parcelaSolicitada" name="" id="parcelaSolicitada">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <a id="rolamento" href="" class="btn-simular" type="button" value="simular" onclick="simular()">Simular</a>
+                <div class="whatsapp-container">
+                    <p>Entre em contato pelo WhatsApp:</p>
+                    <a id="whatsappLink" class="whatsapp-link" target="_blank">Enviar via WhatsApp</a>
+                </div>
+            </form>
+            <img class="hero-mobile" src="img/favicon.png" alt="Para todos, Imagem de uma pessoa sentada assistindo a explicação de outra sendo feito num quadro">
+        </section>
+    </main>
+    <section class="resultado" id="containerResultado">
+        <img class="hero-mobile2" src="img/logo-282x62.png" alt="Duas pessoas saltando com bandeiras, sentimendo de felicidade">
+        <form class="container-resultado" action="">
+            <label for="valor">Valor Solicitado:</label>
+            <input id="displayValorSolicitado" type="number" value="" disabled>
+            <label for="parcelas"> Quantidade de Parcelas:</label>
+            <input id="displayParcelaSolicitada" type="number" disabled>
+            <label for="valorDaParcela">Valor da Parcela:</label>
+            <input type="number" name="valorDaParcela" id="valorParcela" disabled>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.1.0/dist/autoNumeric.min.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
